@@ -1,0 +1,44 @@
+{
+  "method": "bm25",
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "query_term_frequency": "binary"
+  },
+  "chunking": {
+    "size": 1200,
+    "overlap": 200
+  },
+  "preprocessor": "rst-light-v1",
+  "tokenizer": "unicode-word-casefold-v1",
+  "retrieval_k": 10,
+  "timing": {
+    "warmup_per_query": 1,
+    "repeats_per_query": 5,
+    "excludes": "loading, chunking, index building, evidence diagnostics, UI and generation"
+  },
+  "python": "3.13.5",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7",
+  "manifest_sha256": "b856faf7b06516f6240af8be3e401cc9520bf11536ce739c3e220ad39375eb29",
+  "questions_sha256": "9eb888cc94bbae62a6a73da8793917ecc799eda14ba8f2ed4cbf725737a8c0ac",
+  "implementation_sha256": {
+    "keyword.py": "221a4aa7e89cec69fb48477955d682fa1ceb706ac5b144e0541098395f4f8260",
+    "run_keyword.py": "75387859da8586b3334edcd3ac07d14b3a1cb6f44a2433a5f9675d1aa0f5d733"
+  },
+  "indexed_files": [
+    "corpus/interpreter.rst",
+    "corpus/introduction.rst",
+    "corpus/controlflow.rst",
+    "corpus/datastructures.rst",
+    "corpus/modules.rst",
+    "corpus/inputoutput.rst",
+    "corpus/errors.rst",
+    "corpus/classes.rst",
+    "corpus/stdlib.rst",
+    "corpus/stdlib2.rst",
+    "corpus/venv.rst",
+    "corpus/floatingpoint.rst"
+  ],
+  "attribution": "Corpus text is CPython tutorial content under PSF-2.0; retain evaluation/pilot/ATTRIBUTION.md and licenses/CPYTHON-LICENSE.txt when redistributing chunks."
+}

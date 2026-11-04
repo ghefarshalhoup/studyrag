@@ -1,0 +1,2 @@
+# Model-free ranking replay and evaluation. Verified with Python 3.13 on Windows.
+numpy==2.5.4

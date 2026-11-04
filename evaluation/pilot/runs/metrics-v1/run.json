@@ -1,0 +1,27 @@
+{
+  "metrics_version": "pooled-graded-v1",
+  "review_status": "ai_reviewed",
+  "cutoff": 10,
+  "gain": "2**grade - 1",
+  "discount": "log2(rank + 1)",
+  "mrr_relevance_threshold": 1,
+  "direct_mrr_relevance_threshold": 2,
+  "macro_population": "answerable development questions only",
+  "recall_denominator": "positive judged chunks in top-10 union of bm25/dense/hybrid",
+  "overlapping_chunks_deduplicated": false,
+  "input_sha256": {
+    "questions": "9eb888cc94bbae62a6a73da8793917ecc799eda14ba8f2ed4cbf725737a8c0ac",
+    "manifest": "b856faf7b06516f6240af8be3e401cc9520bf11536ce739c3e220ad39375eb29",
+    "chunks": "c93740105aa971f15209233bac5315e97304b08a1a409eda884f7d344f206ca5",
+    "pool": "dc70969edd83882c40d8bfb408760683216b329368a8a53f29c8a15ecf033ee5",
+    "rankings": "dd8f8d04700e04923d1f5dda9c207387f96a7d7305a39843594f61c40e61a074",
+    "comparison_run": "14080923ebab1537a6a3cc8b05c72f5824c3116f801e93a406be7b87abda5c55",
+    "qrels": "b409b1580986679e4237441dc047f7721f3dbd7061c378846aef61b38e4864c1",
+    "review_protocol": "75d63ee370efd932d083cf071376da95b98bec26fa2679677f900efc18e71007"
+  },
+  "implementation_sha256": {
+    "metrics.py": "a93971fa2ee86df83757c3d1cb337525bcfd6ede5b764ee556c18e48e15d3260",
+    "run_metrics.py": "83b18cc7bc514957f8a665260b335412a1acd3fc8e844c71a9da29ff12a5adbd"
+  },
+  "model_calls": 0
+}

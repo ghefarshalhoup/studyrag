@@ -1,0 +1,53 @@
+{
+  "model_name": "Xenova/ms-marco-MiniLM-L-6-v2",
+  "export_repository": "Xenova/ms-marco-MiniLM-L-6-v2",
+  "revision": "a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+  "model_file": "onnx/model.onnx",
+  "model_license": "Apache-2.0",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1783,
+      "sha256": "5ab9570ca405274a5eed93c119b32bc6415e6dfcc5f822b00e5d6757b4190a31",
+      "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/README.md"
+    },
+    {
+      "path": "config.json",
+      "bytes": 824,
+      "sha256": "d827779a72d27ae68cf878a6fc2e954542663fe21ca515d9f4783fc96be2d37e",
+      "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/config.json"
+    },
+    {
+      "path": "onnx/model.onnx",
+      "bytes": 90992115,
+      "sha256": "c623d0bcb99f4622beb413eaef00cfbe5db20df9f1dd982da4b4f26022881870",
+      "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/onnx/model.onnx"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "bytes": 125,
+      "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/special_tokens_map.json"
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 711396,
+      "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/tokenizer.json"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 1242,
+      "sha256": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53",
+      "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/tokenizer_config.json"
+    },
+    {
+      "path": "vocab.txt",
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/vocab.txt"
+    }
+  ],
+  "inference_package": "fastembed==0.9.1",
+  "upstream_model_card": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2"
+}

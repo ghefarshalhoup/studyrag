@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "run": "e6dc6ad59c90fa4b5082f0f3979c2eddef3ee58181a3196fc012a9d36719e6ac",
+    "rankings": "0c5f6e74935c848ef2822e8f0dfab54e944c7e3e70400b44fcbca56eb45c1325",
+    "pool": "b646087dd19641c2c3642d2ab82d7a38df38ae3ffc65bcd09c98dfb0a43eded0",
+    "judgments": "b9ba3086904ef3fc5f7637197a481603f3d53c6f2108eae4b2e5fa494967d86a",
+    "review_protocol": "3445e3bce056983848f82db581a0b98d1bbd2a22e9cc9dd7a22b3d27a6a91186",
+    "execution_lock": "00765f82250f99cd375ec7fd3b01634cd3221e9fd18127d09f5234bf91a00dd5"
+  },
+  "implementation_sha256": {
+    "score_holdout.py": "f157abf4dc46f75af919ca6a956ab3f2ae2f346d1116dbd90f28ce5155c343bb",
+    "metrics.py": "a93971fa2ee86df83757c3d1cb337525bcfd6ede5b764ee556c18e48e15d3260",
+    "score_reranker.py": "ee7e49c2b75377e0c5d4e20aee1bfdb9c985be57d332c79db4e5ddf09a0c502c"
+  },
+  "review_status": "ai_reviewed",
+  "split": "test",
+  "model_calls": 0,
+  "quality_results_used_for_tuning": false
+}

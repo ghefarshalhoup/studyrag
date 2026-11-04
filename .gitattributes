@@ -1,0 +1,6 @@
+# Evaluation manifests fingerprint exact source bytes. Preserve them on checkout.
+# In particular, core.autocrlf must not rewrite frozen code/data and invalidate replay.
+* -text
+*.png binary
+*.pdf binary
+*.npz binary

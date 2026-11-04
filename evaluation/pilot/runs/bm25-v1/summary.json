@@ -1,0 +1,31 @@
+{
+  "dataset": {
+    "documents": 12,
+    "questions": 20,
+    "answerable": 16,
+    "categories": {
+      "paraphrase": 4,
+      "exact_term": 4,
+      "typo": 4,
+      "shorthand": 2,
+      "multi_evidence": 2,
+      "unanswerable": 4
+    },
+    "review_status": {
+      "ai_reviewed": 20
+    }
+  },
+  "chunks": 250,
+  "answerable_queries": 16,
+  "seed_evidence_hit_at_5": 0.6875,
+  "seed_evidence_hit_at_10": 0.8125,
+  "mean_seed_passage_character_coverage_at_10": 0.8140767844585092,
+  "latency_ms": {
+    "median": 0.16875,
+    "p95": 0.2228
+  },
+  "index_build_ms": 10.3862,
+  "unanswerable_queries": 4,
+  "unanswerable_queries_returning_candidates": 4,
+  "interpretation": "Development diagnostics against incomplete AI-reviewed source-span labels; not gold-standard retrieval metrics or answer accuracy."
+}

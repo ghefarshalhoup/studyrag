@@ -1,0 +1,5 @@
+# Optional local CPU retrieval; install separately from the interactive app.
+fastembed==0.9.1
+numpy==2.5.4
+onnxruntime==1.31.1
+tokenizers==0.23.3

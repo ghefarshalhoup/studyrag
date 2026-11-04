@@ -1,0 +1,49 @@
+{
+  "cutoff": 10,
+  "questions": 20,
+  "answerable_questions_in_macro_averages": 16,
+  "unanswerable_questions_excluded_from_macro_averages": 4,
+  "judged_pairs": 384,
+  "grade_counts": {
+    "0": 313,
+    "1": 28,
+    "2": 43
+  },
+  "top_10_judgment_coverage": 1.0,
+  "interpretation": "AI-reviewed pooled development ranking metrics; not human gold, exhaustive corpus recall, answer quality or held-out performance.",
+  "methods": {
+    "bm25": {
+      "ndcg_at_k": 0.7187766146177638,
+      "mrr_at_k": 0.896875,
+      "direct_mrr_at_k": 0.803125,
+      "precision_at_k": 0.28125,
+      "pooled_recall_at_k": 0.7142496392496392,
+      "direct_evidence_at_1_count": 12,
+      "direct_evidence_at_10_count": 15,
+      "unanswerable_queries_returning_candidates": 4,
+      "unanswerable_candidates_with_positive_grade": 0.0
+    },
+    "dense": {
+      "ndcg_at_k": 0.8160139636265068,
+      "mrr_at_k": 0.8958333333333334,
+      "direct_mrr_at_k": 0.8958333333333334,
+      "precision_at_k": 0.36875,
+      "pooled_recall_at_k": 0.870531204906205,
+      "direct_evidence_at_1_count": 13,
+      "direct_evidence_at_10_count": 16,
+      "unanswerable_queries_returning_candidates": 4,
+      "unanswerable_candidates_with_positive_grade": 0.0
+    },
+    "hybrid": {
+      "ndcg_at_k": 0.7903175884362185,
+      "mrr_at_k": 0.96875,
+      "direct_mrr_at_k": 0.875,
+      "precision_at_k": 0.325,
+      "pooled_recall_at_k": 0.7985299422799422,
+      "direct_evidence_at_1_count": 13,
+      "direct_evidence_at_10_count": 15,
+      "unanswerable_queries_returning_candidates": 4,
+      "unanswerable_candidates_with_positive_grade": 0.0
+    }
+  }
+}

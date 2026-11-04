@@ -1,0 +1,58 @@
+{
+  "cutoff": 10,
+  "questions": 20,
+  "judged_pairs": 430,
+  "grade_counts": {
+    "0": 358,
+    "1": 28,
+    "2": 44
+  },
+  "answerable_questions_in_macro_averages": 16,
+  "top_10_judgment_coverage": 1.0,
+  "heldout_queries_executed": 0,
+  "methods": {
+    "bm25": {
+      "ndcg_at_k": 0.7184292804583838,
+      "mrr_at_k": 0.896875,
+      "direct_mrr_at_k": 0.803125,
+      "precision_at_k": 0.28125,
+      "pooled_recall_at_k": 0.7135551948051948,
+      "direct_evidence_at_1_count": 12,
+      "direct_evidence_at_10_count": 15,
+      "unanswerable_queries_returning_candidates": 4
+    },
+    "dense": {
+      "ndcg_at_k": 0.8120550644069496,
+      "mrr_at_k": 0.8958333333333334,
+      "direct_mrr_at_k": 0.8958333333333334,
+      "precision_at_k": 0.36875,
+      "pooled_recall_at_k": 0.8649756493506493,
+      "direct_evidence_at_1_count": 13,
+      "direct_evidence_at_10_count": 16,
+      "unanswerable_queries_returning_candidates": 4
+    },
+    "hybrid": {
+      "ndcg_at_k": 0.7880131844451765,
+      "mrr_at_k": 0.96875,
+      "direct_mrr_at_k": 0.875,
+      "precision_at_k": 0.325,
+      "pooled_recall_at_k": 0.7957521645021645,
+      "direct_evidence_at_1_count": 13,
+      "direct_evidence_at_10_count": 15,
+      "unanswerable_queries_returning_candidates": 4
+    },
+    "reranked_hybrid": {
+      "ndcg_at_k": 0.8437238508724129,
+      "mrr_at_k": 1.0,
+      "direct_mrr_at_k": 0.96875,
+      "precision_at_k": 0.35,
+      "pooled_recall_at_k": 0.8284902597402597,
+      "direct_evidence_at_1_count": 15,
+      "direct_evidence_at_10_count": 16,
+      "unanswerable_queries_returning_candidates": 4
+    }
+  },
+  "interpretation": "All four methods rescored on the expanded AI-reviewed development pool. Pooled recall is not exhaustive corpus recall. No held-out or answer-quality result.",
+  "newly_judged_pairs": 46,
+  "median_rerank_ms": 3081.43665
+}

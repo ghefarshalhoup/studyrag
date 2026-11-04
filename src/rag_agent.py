@@ -209,22 +209,25 @@ Is this document relevant to answering the question?"""),
     async def _generate(self, state: AgentState) -> dict:
         """Generate answer based on retrieved documents."""
         question = state["question"]
-        # Prefer graded documents, fall back to all retrieved documents
-        graded_docs = state.get("graded_documents", [])
-        all_docs = state.get("documents", [])
-        documents = graded_docs if graded_docs else all_docs
+        # Rejected evidence must never be reintroduced when every chunk is filtered out.
+        documents = state["graded_documents"]
         thoughts = state.get("thoughts", [])
 
-        # Format documents for context
-        if documents:
-            doc_context = "\n\n---\n\n".join([
-                f"[Source: {doc.metadata.get('source', 'Unknown')}, Page {doc.metadata.get('page', 'N/A')}]\n{doc.page_content}"
-                for doc in documents
-            ])
-            system_note = ""
-        else:
-            doc_context = "No documents were found relevant to your question."
-            system_note = "\nNote: No relevant documents were found. Please let the user know and suggest they rephrase or upload relevant documents."
+        if not documents:
+            thoughts.append(AgentThought(
+                step="Generation",
+                content="No relevant documents; returning an abstention without a model call",
+            ))
+            return {
+                "generation": "I couldn't find relevant information in the uploaded documents.",
+                "thoughts": thoughts,
+            }
+
+        # Format only accepted documents for context.
+        doc_context = "\n\n---\n\n".join([
+            f"[Source: {doc.metadata.get('source', 'Unknown')}, Page {doc.metadata.get('page', 'N/A')}]\n{doc.page_content}"
+            for doc in documents
+        ])
 
         # Generation prompt. History goes through a placeholder so braces in
         # earlier messages are not read as template variables.
@@ -236,7 +239,7 @@ Guidelines:
 - Base your answer on the provided documents
 - If the documents don't contain enough information, say so clearly
 - Be concise but thorough
-- Cite sources when possible using [Source, Page X] format{system_note}
+- Cite sources when possible using [Source, Page X] format
 
 Document Context:
 {context}"""),
@@ -249,7 +252,6 @@ Document Context:
         generation = await chain.ainvoke({
             "context": doc_context,
             "question": question,
-            "system_note": system_note,
             "history": self._history()[-6:],  # Include recent conversation
         })
 
@@ -304,7 +306,7 @@ Document Context:
             yield {"token": token + " "}
 
         # Yield sources
-        documents = final_state.get("graded_documents", []) or final_state.get("documents", [])
+        documents = final_state["graded_documents"]
         sources = [
             {
                 "source": doc.metadata.get("source", "Unknown"),
@@ -314,16 +316,17 @@ Document Context:
             for doc in documents
         ]
 
-        yield {"sources": sources, "done": True}
-
-        # Update memory
+        # Completion includes committing the turn, even if the consumer stops at done.
         self.memory.add_user_message(question)
         self.memory.add_ai_message(generation)
+
+        yield {"sources": sources, "generation": generation, "done": True}
 
     async def ainvoke(self, question: str) -> dict:
         """Invoke the agent and return the complete response."""
         sources = []
         thoughts = []
+        generation = ""
 
         async for event in self.astream(question):
             if "thought" in event:
@@ -331,11 +334,8 @@ Document Context:
             if "sources" in event:
                 sources = event["sources"]
             if event.get("done"):
+                generation = event["generation"]
                 break
-
-        # Get the complete generation from memory
-        messages = self.memory.get_messages()
-        generation = messages[-1].content if messages else ""
 
         return {
             "generation": generation,

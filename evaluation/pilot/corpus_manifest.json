@@ -1,0 +1,141 @@
+{
+  "dataset_id": "studyrag-python-tutorial-pilot-v0.1",
+  "source_version": "CPython v3.13.0",
+  "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7",
+  "license_path": "licenses/CPYTHON-LICENSE.txt",
+  "license_sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb",
+  "documents": [
+    {
+      "document_id": "py313-interpreter",
+      "path": "corpus/interpreter.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/interpreter.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/interpreter.html",
+      "sha256": "8f8d649e94b4058e2485a625cd43c0b3edfeb3c4c69e0c674dded783cd241698",
+      "bytes": 6514,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-introduction",
+      "path": "corpus/introduction.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/introduction.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/introduction.html",
+      "sha256": "63064d9dbec912a6d0e89089b16544e5488fbdc06293be4fa8df3c64d37739f0",
+      "bytes": 18984,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-controlflow",
+      "path": "corpus/controlflow.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/controlflow.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/controlflow.html",
+      "sha256": "e5da06f2db7559a6539f9a8f48f3ceaa4395f82800160f48f8c4208f4be57c27",
+      "bytes": 40760,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-datastructures",
+      "path": "corpus/datastructures.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/datastructures.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/datastructures.html",
+      "sha256": "3c2b7a87519b3e7b1513f5fbb12c9d37ba715c402a6bf032f1b584d555eb979b",
+      "bytes": 24846,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-modules",
+      "path": "corpus/modules.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/modules.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/modules.html",
+      "sha256": "b391a3d94b7dd61785cb7749ba36837735404693eed3172248f5be2101eda16b",
+      "bytes": 25513,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-inputoutput",
+      "path": "corpus/inputoutput.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/inputoutput.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/inputoutput.html",
+      "sha256": "13e550fdc65948d88196eda0985221df240a1dce40dc456e858ef3a55611a606",
+      "bytes": 20596,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-errors",
+      "path": "corpus/errors.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/errors.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/errors.html",
+      "sha256": "c1d8deb184bce4aa005a03407d62312a774e38dd62ba73802e5e8ace030ae34e",
+      "bytes": 24234,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-classes",
+      "path": "corpus/classes.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/classes.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/classes.html",
+      "sha256": "fd28b82a81acda33c4997dc931ab63d5a4fea4ef65d820b579dcf2d4bf7304a4",
+      "bytes": 37042,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-stdlib",
+      "path": "corpus/stdlib.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/stdlib.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/stdlib.html",
+      "sha256": "f0f425a1346f45d5510b531295ac54c5f3c46e560712a51df7e7fafa833d0947",
+      "bytes": 11436,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-stdlib2",
+      "path": "corpus/stdlib2.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/stdlib2.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/stdlib2.html",
+      "sha256": "b38c38bd657b4f74b3a1d4168cd93dbbc233a78c9d8d4971cbfbec4a2143e183",
+      "bytes": 15197,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-venv",
+      "path": "corpus/venv.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/venv.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/venv.html",
+      "sha256": "f9dac36833979e1e2885ea9bdb1975548b6ff6fca7f57bb3ba6a77810c93d7ac",
+      "bytes": 7416,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    },
+    {
+      "document_id": "py313-floatingpoint",
+      "path": "corpus/floatingpoint.rst",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/60403a5409ff2c3f3b07dd2ca91a7a3e096839c7/Doc/tutorial/floatingpoint.rst",
+      "reader_url": "https://docs.python.org/3.13/tutorial/floatingpoint.html",
+      "sha256": "8e648340d27e4ad469e40a53f8b47389d8490a7b10ea828f0bc76186c3863a55",
+      "bytes": 13025,
+      "license": "PSF-2.0",
+      "copyright_holder": "Python Software Foundation",
+      "source_commit": "60403a5409ff2c3f3b07dd2ca91a7a3e096839c7"
+    }
+  ]
+}

@@ -28,6 +28,9 @@ venv/
 env/
 ENV/
 .venv/
+.retrieval-venv/
+.models/
+fastembed_cache/
 
 # IDE
 .idea/
@@ -53,3 +56,6 @@ temp/
 
 # Tests
 .pytest_cache/
+
+# Local reproduction output; recorded evaluation snapshots remain versioned.
+local-results/

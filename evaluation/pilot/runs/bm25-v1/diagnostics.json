@@ -1,0 +1,528 @@
+[
+  {
+    "question_id": "pilot-001",
+    "category": "paraphrase",
+    "question": "Removing the oldest item from my Python list keeps getting slower as the list grows. What should I use for a FIFO queue, and why?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.2228,
+      "p95": 0.228
+    }
+  },
+  {
+    "question_id": "pilot-002",
+    "category": "exact_term",
+    "question": "Why does a function with a default argument L=[] keep values from previous calls, and how do I give calls that omit L a fresh list?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1889,
+      "p95": 0.1922
+    }
+  },
+  {
+    "question_id": "pilot-003",
+    "category": "typo",
+    "question": "Why did my list become None after I assinged the result of list.sort() back to it?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.167,
+      "p95": 0.1699
+    }
+  },
+  {
+    "question_id": "pilot-004",
+    "category": "exact_term",
+    "question": "How do I create an empty set, and why does {} not do that?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1339,
+      "p95": 0.1404
+    }
+  },
+  {
+    "question_id": "pilot-005",
+    "category": "paraphrase",
+    "question": "Can I use a list as a dictionary key? What is different about a tuple containing only strings?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": false,
+      "complete_passages": 0,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 0.7960618846694796,
+      "per_passage_coverage": [
+        0.7960618846694796
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": false,
+      "complete_passages": 0,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 0.7960618846694796,
+      "per_passage_coverage": [
+        0.7960618846694796
+      ]
+    },
+    "latency_ms": {
+      "median": 0.177,
+      "p95": 0.1823
+    }
+  },
+  {
+    "question_id": "pilot-006",
+    "category": "paraphrase",
+    "question": "If processing a file raises an exception, how can I ensure the file gets closed?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 2,
+      "mean_passage_character_coverage": 0.8644400785854617,
+      "per_passage_coverage": [
+        0.7288801571709234,
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 2,
+      "known_positive_passages": 2,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0,
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1654,
+      "p95": 0.1686
+    }
+  },
+  {
+    "question_id": "pilot-007",
+    "category": "exact_term",
+    "question": "What does adding b to a file mode change, and can I specify encoding in that mode?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.2044,
+      "p95": 0.2213
+    }
+  },
+  {
+    "question_id": "pilot-008",
+    "category": "shorthand",
+    "question": "Stdlib JSON to a file and back: which calls do I use, rather than getting a JSON string?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1658,
+      "p95": 0.1676
+    }
+  },
+  {
+    "question_id": "pilot-009",
+    "category": "paraphrase",
+    "question": "I named my script random.py and now importing random finds my file. How can a local file take priority over the standard library?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": false,
+      "complete_passages": 0,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 0.0,
+      "per_passage_coverage": [
+        0.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1754,
+      "p95": 0.1774
+    }
+  },
+  {
+    "question_id": "pilot-010",
+    "category": "shorthand",
+    "question": "CLI + importable module: how do I stop command-line handling from running when the file is imported?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1569,
+      "p95": 0.158
+    }
+  },
+  {
+    "question_id": "pilot-011",
+    "category": "typo",
+    "question": "Why does 0.1 + 0.1 + 0.1 fail an equlity check with 0.3, and what comparison helper can I use?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": false,
+      "complete_passages": 0,
+      "known_positive_passages": 2,
+      "mean_passage_character_coverage": 0.0,
+      "per_passage_coverage": [
+        0.0,
+        0.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": false,
+      "complete_passages": 0,
+      "known_positive_passages": 2,
+      "mean_passage_character_coverage": 0.0,
+      "per_passage_coverage": [
+        0.0,
+        0.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1695,
+      "p95": 0.1723
+    }
+  },
+  {
+    "question_id": "pilot-012",
+    "category": "typo",
+    "question": "Two Python apps need diferent versions of the same package. How do I keep an upgrade for one from breaking the other?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": false,
+      "complete_passages": 0,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 0.0,
+      "per_passage_coverage": [
+        0.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": false,
+      "complete_passages": 0,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 0.0,
+      "per_passage_coverage": [
+        0.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1974,
+      "p95": 0.2072
+    }
+  },
+  {
+    "question_id": "pilot-013",
+    "category": "exact_term",
+    "question": "When does a for-loop else clause execute, and does it run after break?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1536,
+      "p95": 0.1552
+    }
+  },
+  {
+    "question_id": "pilot-014",
+    "category": "typo",
+    "question": "What tells a for loop to stop when an itterator has no more values, and how do I request its next value manually?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 1,
+      "mean_passage_character_coverage": 1.0,
+      "per_passage_coverage": [
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.2156,
+      "p95": 0.2191
+    }
+  },
+  {
+    "question_id": "pilot-015",
+    "category": "multi_evidence",
+    "question": "A function default list retains old items, and a class-level list is shared by instances. Explain each cause and how to make the lists independent.",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 2,
+      "mean_passage_character_coverage": 0.8958333333333333,
+      "per_passage_coverage": [
+        0.7916666666666666,
+        1.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 2,
+      "mean_passage_character_coverage": 0.8958333333333333,
+      "per_passage_coverage": [
+        0.7916666666666666,
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.2286,
+      "p95": 0.2326
+    }
+  },
+  {
+    "question_id": "pilot-016",
+    "category": "multi_evidence",
+    "question": "Why can ordinary floats surprise me with decimal equality, and which standard-library numeric type is useful when exact decimal representation matters for money?",
+    "answerable": true,
+    "results_returned": 10,
+    "at_5": {
+      "any_known_passage_complete": false,
+      "complete_passages": 0,
+      "known_positive_passages": 3,
+      "mean_passage_character_coverage": 0.0,
+      "per_passage_coverage": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "at_10": {
+      "any_known_passage_complete": true,
+      "complete_passages": 1,
+      "known_positive_passages": 3,
+      "mean_passage_character_coverage": 0.3333333333333333,
+      "per_passage_coverage": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "latency_ms": {
+      "median": 0.1816,
+      "p95": 0.1833
+    }
+  },
+  {
+    "question_id": "pilot-017",
+    "category": "unanswerable",
+    "question": "How do I use pandas groupby to compute the median salary in each department?",
+    "answerable": false,
+    "results_returned": 10,
+    "at_5": null,
+    "at_10": null,
+    "latency_ms": {
+      "median": 0.1401,
+      "p95": 0.1428
+    }
+  },
+  {
+    "question_id": "pilot-018",
+    "category": "unanswerable",
+    "question": "Which scikit-learn GridSearchCV parameters control cross-validation and parallel execution?",
+    "answerable": false,
+    "results_returned": 10,
+    "at_5": null,
+    "at_10": null,
+    "latency_ms": {
+      "median": 0.0756,
+      "p95": 0.0777
+    }
+  },
+  {
+    "question_id": "pilot-019",
+    "category": "unanswerable",
+    "question": "How do I create a PostgreSQL index that speeds up searching a JSONB field?",
+    "answerable": false,
+    "results_returned": 10,
+    "at_5": null,
+    "at_10": null,
+    "latency_ms": {
+      "median": 0.1007,
+      "p95": 0.1072
+    }
+  },
+  {
+    "question_id": "pilot-020",
+    "category": "unanswerable",
+    "question": "Which Qdrant collection settings should I choose for text-embedding-3-small vectors?",
+    "answerable": false,
+    "results_returned": 10,
+    "at_5": null,
+    "at_10": null,
+    "latency_ms": {
+      "median": 0.0936,
+      "p95": 0.1003
+    }
+  }
+]

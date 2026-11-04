@@ -1,0 +1,11 @@
+OFFLINE DEMO: scripted model + fake embeddings; not measured answer quality.
+
+Question: What should I use for a FIFO queue?
+Answer: Use collections.deque for fast appends and pops at both ends [demo-notes.pdf, Page 1].
+Accepted sources: 1
+
+Question: How do I configure a Qdrant collection?
+Answer: I couldn't find relevant information in the uploaded documents.
+Accepted sources: 0
+
+Both completed turns are saved in conversation memory.

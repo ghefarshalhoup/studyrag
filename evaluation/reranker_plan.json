@@ -1,0 +1,30 @@
+{
+  "version": "minilm-hybrid50-v1",
+  "split_to_run_now": "dev",
+  "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+  "revision": "a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+  "model_file": "onnx/model.onnx",
+  "candidate_selection": "equal-weight RRF of existing BM25 top 50 and dense top 50; take fused top 50",
+  "rrf_constant": 60,
+  "candidate_depth": 50,
+  "output_depth": 10,
+  "tie_break": "descending reranker logit, then ascending stable chunk ID",
+  "query_prefix": "",
+  "max_pair_tokens": 512,
+  "truncation": "only_second, right; preserve query",
+  "provider": "CPUExecutionProvider",
+  "threads": 2,
+  "batch_size": 8,
+  "warmup_pairs": 8,
+  "timing": "one full 50-candidate scoring pass per development question; tokenize+inference+sort; model loading and retrieval excluded",
+  "quality_metrics": [
+    "nDCG@10",
+    "MRR@10 grade>=1",
+    "MRR@10 grade2",
+    "P@10",
+    "pooled recall@10"
+  ],
+  "selection_policy": "One model/configuration for this stage, fixed before scoring; report regressions without trying alternatives.",
+  "pool_policy": "Retain old judgments; judge every new top-10 passage before comparing all four methods on one expanded pool.",
+  "heldout_policy": "Do not execute heldout-v1 during development or use it to tune this configuration. Later final run must record this freeze hash."
+}

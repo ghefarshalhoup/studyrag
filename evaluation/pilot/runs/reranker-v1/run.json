@@ -1,0 +1,207 @@
+{
+  "method": "reranked_hybrid",
+  "split": "dev",
+  "plan": {
+    "version": "minilm-hybrid50-v1",
+    "split_to_run_now": "dev",
+    "reranker_model": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "revision": "a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+    "model_file": "onnx/model.onnx",
+    "candidate_selection": "equal-weight RRF of existing BM25 top 50 and dense top 50; take fused top 50",
+    "rrf_constant": 60,
+    "candidate_depth": 50,
+    "output_depth": 10,
+    "tie_break": "descending reranker logit, then ascending stable chunk ID",
+    "query_prefix": "",
+    "max_pair_tokens": 512,
+    "truncation": "only_second, right; preserve query",
+    "provider": "CPUExecutionProvider",
+    "threads": 2,
+    "batch_size": 8,
+    "warmup_pairs": 8,
+    "timing": "one full 50-candidate scoring pass per development question; tokenize+inference+sort; model loading and retrieval excluded",
+    "quality_metrics": [
+      "nDCG@10",
+      "MRR@10 grade>=1",
+      "MRR@10 grade2",
+      "P@10",
+      "pooled recall@10"
+    ],
+    "selection_policy": "One model/configuration for this stage, fixed before scoring; report regressions without trying alternatives.",
+    "pool_policy": "Retain old judgments; judge every new top-10 passage before comparing all four methods on one expanded pool.",
+    "heldout_policy": "Do not execute heldout-v1 during development or use it to tune this configuration. Later final run must record this freeze hash."
+  },
+  "model": {
+    "model_name": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "export_repository": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "revision": "a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+    "model_file": "onnx/model.onnx",
+    "model_license": "Apache-2.0",
+    "files": [
+      {
+        "path": "README.md",
+        "bytes": 1783,
+        "sha256": "5ab9570ca405274a5eed93c119b32bc6415e6dfcc5f822b00e5d6757b4190a31",
+        "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/README.md"
+      },
+      {
+        "path": "config.json",
+        "bytes": 824,
+        "sha256": "d827779a72d27ae68cf878a6fc2e954542663fe21ca515d9f4783fc96be2d37e",
+        "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/config.json"
+      },
+      {
+        "path": "onnx/model.onnx",
+        "bytes": 90992115,
+        "sha256": "c623d0bcb99f4622beb413eaef00cfbe5db20df9f1dd982da4b4f26022881870",
+        "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/onnx/model.onnx"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "bytes": 125,
+        "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+        "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/special_tokens_map.json"
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 711396,
+        "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+        "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/tokenizer.json"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 1242,
+        "sha256": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53",
+        "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/tokenizer_config.json"
+      },
+      {
+        "path": "vocab.txt",
+        "bytes": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+        "url": "https://huggingface.co/Xenova/ms-marco-MiniLM-L-6-v2/resolve/a09144355adeed5f58c8ed011d209bf8ee5a1fec/vocab.txt"
+      }
+    ],
+    "inference_package": "fastembed==0.9.1",
+    "upstream_model_card": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2"
+  },
+  "input_sha256": {
+    "questions": "9eb888cc94bbae62a6a73da8793917ecc799eda14ba8f2ed4cbf725737a8c0ac",
+    "manifest": "b856faf7b06516f6240af8be3e401cc9520bf11536ce739c3e220ad39375eb29",
+    "chunks": "c93740105aa971f15209233bac5315e97304b08a1a409eda884f7d344f206ca5",
+    "baseline_run": "f5fa2cac6ce4513beedb29a61d8f1ed3b32c9d7b4e9c9ba60c44775a501552c9",
+    "comparison_run": "14080923ebab1537a6a3cc8b05c72f5824c3116f801e93a406be7b87abda5c55",
+    "comparison_rankings": "dd8f8d04700e04923d1f5dda9c207387f96a7d7305a39843594f61c40e61a074",
+    "comparison_pool": "dc70969edd83882c40d8bfb408760683216b329368a8a53f29c8a15ecf033ee5",
+    "embeddings": "f9dca1430308702e71f2ddf8bf12d5c050c6afc4cc6c99d031e0a431ec94dd48",
+    "heldout_freeze": "6e8c54a2a472d69f803651aaf6df4bce1d1a551a5029734876ac60416b7d73a0",
+    "plan": "1177eb8363a51704d07576c0c4ff8ac6c15c0963d936af5694e64bcc0f25b3ba",
+    "model_spec": "45eccc61008fd21676c3a5a2afb6e3df7a54f718faf0accfaff2a451248f52d0"
+  },
+  "implementation_sha256": {
+    "run_reranker.py": "3ef12bf1134c66314acf1665289598095c15c752f7b8257aca7e48fd5edf1ccd",
+    "semantic.py": "68b331d5f557c221d524c4da12f99cbe5298ff939daedf9b38d8e533a1b83bdd",
+    "keyword.py": "221a4aa7e89cec69fb48477955d682fa1ceb706ac5b144e0541098395f4f8260"
+  },
+  "output_sha256": {
+    "rankings.jsonl": "47503601cb23f14b7815a668e75240f948ef7f1a7007147f5f99b2f979f8ecec",
+    "pool.jsonl": "f30759a53e1576bfd75d0cc1089735714673ff2b47075b50e030d4938f2a7f2c",
+    "scores.jsonl": "a7e02b95353b4e4ed7b3b9d4b17c4fa911335b4f321c1f204d93b06bf365e41f"
+  },
+  "model_load_ms": 138.0001,
+  "timings": [
+    {
+      "question_id": "pilot-001",
+      "rerank_ms": 3083.8445
+    },
+    {
+      "question_id": "pilot-002",
+      "rerank_ms": 3359.053
+    },
+    {
+      "question_id": "pilot-003",
+      "rerank_ms": 3467.3327
+    },
+    {
+      "question_id": "pilot-004",
+      "rerank_ms": 3315.6039
+    },
+    {
+      "question_id": "pilot-005",
+      "rerank_ms": 3622.4034
+    },
+    {
+      "question_id": "pilot-006",
+      "rerank_ms": 3571.2669
+    },
+    {
+      "question_id": "pilot-007",
+      "rerank_ms": 3543.08
+    },
+    {
+      "question_id": "pilot-008",
+      "rerank_ms": 3721.879
+    },
+    {
+      "question_id": "pilot-009",
+      "rerank_ms": 3079.0288
+    },
+    {
+      "question_id": "pilot-010",
+      "rerank_ms": 3225.7235
+    },
+    {
+      "question_id": "pilot-011",
+      "rerank_ms": 3305.3645
+    },
+    {
+      "question_id": "pilot-012",
+      "rerank_ms": 2994.1004
+    },
+    {
+      "question_id": "pilot-013",
+      "rerank_ms": 2328.0009
+    },
+    {
+      "question_id": "pilot-014",
+      "rerank_ms": 2597.7262
+    },
+    {
+      "question_id": "pilot-015",
+      "rerank_ms": 2380.137
+    },
+    {
+      "question_id": "pilot-016",
+      "rerank_ms": 2435.7276
+    },
+    {
+      "question_id": "pilot-017",
+      "rerank_ms": 2680.4382
+    },
+    {
+      "question_id": "pilot-018",
+      "rerank_ms": 2740.4979
+    },
+    {
+      "question_id": "pilot-019",
+      "rerank_ms": 2713.7582
+    },
+    {
+      "question_id": "pilot-020",
+      "rerank_ms": 2781.3352
+    }
+  ],
+  "median_rerank_ms": 3081.43665,
+  "max_pair_tokens_before_truncation": 535,
+  "truncated_pairs": 8,
+  "scored_pairs": 1000,
+  "warmup_pairs_excluded": 8,
+  "packages": {
+    "fastembed": "0.9.1",
+    "numpy": "2.5.4",
+    "onnxruntime": "1.31.1",
+    "tokenizers": "0.23.3"
+  },
+  "platform": "Windows-11-10.0.26300-SP0",
+  "heldout_queries_executed": 0,
+  "limitations": "Development run only. Raw logits are not probabilities. Only passage tails may be truncated for ranking; returned chunks retain full text. Timings exclude candidate retrieval and model loading."
+}

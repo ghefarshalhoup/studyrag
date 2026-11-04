@@ -1,0 +1,16 @@
+{
+  "version": "heldout-v1",
+  "frozen_at_utc": "2026-11-03T21:02:57.336200+00:00",
+  "questions_sha256": "fd1f3416f0d14e6c37a9bfad6ebb6c250abd31cf73be8d5bea1908e86bbe4939",
+  "development_questions_sha256": "9eb888cc94bbae62a6a73da8793917ecc799eda14ba8f2ed4cbf725737a8c0ac",
+  "corpus_manifest_sha256": "b856faf7b06516f6240af8be3e401cc9520bf11536ce739c3e220ad39375eb29",
+  "chunks_sha256": "c93740105aa971f15209233bac5315e97304b08a1a409eda884f7d344f206ca5",
+  "reranker_plan_sha256": "1177eb8363a51704d07576c0c4ff8ac6c15c0963d936af5694e64bcc0f25b3ba",
+  "question_count": 16,
+  "answerable_count": 12,
+  "unanswerable_count": 4,
+  "family_policy": "New question families, not paraphrases of development questions; corpus and some chapters are shared.",
+  "review_status": "ai_reviewed",
+  "evaluated": false,
+  "limitations": "Prospective same-corpus holdout authored after earlier development results; not independent, human-gold, document-held-out, or proof of model training-data isolation."
+}
